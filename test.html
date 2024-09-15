@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Приветствие</title>
+    <script>
+        function getGreeting() {
+            var now = new Date();
+            var hour = now.getHours();
+            var greeting;
+
+            if (hour < 12) {
+                greeting = "Доброе утро!";
+            } else if (hour < 18) {
+                greeting = "Добрый день!";
+            } else {
+                greeting = "Добрый вечер!";
+            }
+
+            document.getElementById("greeting").innerHTML = greeting;
+        }
+
+        // Вызов функции при загрузке страницы
+        window.onload = getGreeting;
+    </script>
+</head>
+<body>
+    <h1 id="greeting"></h1>
+</body>
+</html>

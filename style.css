@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(220, 200, 170);
+    color: black;
+    font-size: 2.4rem;
+}
+h1{
+    text-align: center;
+    display: block;
+    margin-top: 0px;
+    position: relative;
+    top: 50px;
+    font-size: 5rem;
+}
+a, a::after, a:hover{
+    color: black;
+    text-decoration: none;
+}
+#menu{
+    display: none;
+    position: fixed;
+    text-align: center;
+    background-color: rgb(124, 113, 95);
+    width: 18%;
+    padding: 20px;
+    border: 2px solid black;
+}
+#menu p, #menu a{
+    margin-top: 100px;
+}
+.menuButton{
+    position: fixed;
+    z-index: 1;
+    font-size: 2.4rem;
+    border: 2px solid black;
+    background-color: rgb(165, 150, 127);
+}
+
+.border {
+    border: 5px solid black;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* ГЛАВНОЕ МЕНЮ */
+
+.homeText{
+    text-align: center;
+}
+
+/* ОБО МНЕ */
+
+.paragraph{
+    margin-left: 50px;
+}
+
+/* ХОББИ */
+
+.RightLeftBorder{
+    border: 5px solid black;
+    display: inline-block;
+    padding: 10px;
+    width: 30%;
+}
+
+.RightLeft{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ИГРА */
+
+#userNumInput{
+    font-size: 5rem;
+}
+#submitButton{
+    font-size: 5rem;
+}
+#restartButton{
+    font-size: 5rem;
+}
+
+.gameText{
+    text-align: center;
+}
+#restartButton{
+    display: none;
+}

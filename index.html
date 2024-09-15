@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пароль</title>
+    <style>
+        body{
+            background-color: rgb(220, 200, 170);
+        }
+        .password{
+            color: black;
+            text-align: center;
+        }
+        h1{
+            font-size: 5rem;
+        }
+        #input{
+            font-size: 1.5rem;
+        }
+        #subBut{
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="password">
+        <h1>Привет! Введи пароль:</h1>
+        <input type="text" id="input"><br>
+        <button id="subBut" onclick="checkPassword()">Подтвердить</button>
+    </div>
+    <script>
+        var userInput = document.getElementById('input');
+
+        function checkPassword(){
+            const password = userInput.value;
+
+                console.log('Введенный пароль:', password);
+                if (password === '2710'){
+                    window.location.href = "home.html";
+                }
+                else{
+                    alert('Пароль введен неправильно!')
+                }
+        }
+        
+        userInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                checkPassword()
+            }
+        });
+    </script>
+</body>
+</html>
